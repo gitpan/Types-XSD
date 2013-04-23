@@ -1,0 +1,109 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Types-XSD
+Upstream-Contact: Toby Inkster <tobyink@cpan.org>
+Source: https://metacpan.org/release/Types-XSD
+
+Files: CONTRIBUTING
+ CREDITS
+ Changes
+ LICENSE
+ MANIFEST.SKIP
+ META.ttl
+ Makefile.PL
+ README
+ meta/changes.pret
+ meta/doap.pret
+ meta/makefile.pret
+ meta/people.pret
+ t/50ID.t
+ t/50NCName.t
+ t/50NMTOKEN.t
+ t/50Name.t
+ t/50QName.t
+ t/50anyURI.t
+ t/50base64Binary.t
+ t/50boolean.t
+ t/50byte.t
+ t/50date.t
+ t/50dateTime.t
+ t/50decimal.t
+ t/50double.t
+ t/50duration.t
+ t/50float.t
+ t/50gDay.t
+ t/50gMonth.t
+ t/50gMonthDay.t
+ t/50gYear.t
+ t/50gYearMonth.t
+ t/50hexBinary.t
+ t/50int.t
+ t/50integer.t
+ t/50language.t
+ t/50long.t
+ t/50negativeInteger.t
+ t/50nonNegativeInteger.t
+ t/50nonPositiveInteger.t
+ t/50normalizedString.t
+ t/50positiveInteger.t
+ t/50short.t
+ t/50string.t
+ t/50time.t
+ t/50token.t
+ t/50unsignedByte.t
+ t/50unsignedInt.t
+ t/50unsignedLong.t
+ t/50unsignedShort.t
+Copyright: Unknown
+License: Unknown
+
+Files: inc/Module/Install.pm
+ inc/Module/Install/Include.pm
+ inc/Module/Install/Metadata.pm
+Copyright: Copyright 2002 - 2012 Brian Ingerson, Audrey Tang and Adam Kennedy.
+License: GPL-1.0+ or Artistic-1.0
+
+Files: lib/Types/XSD.pm
+ t/01basic.t
+Copyright: This software is copyright (c) 2013 by Toby Inkster.
+License: GPL-1.0+ or Artistic-1.0
+
+Files: inc/Module/Install/TrustMetaYml.pm
+ inc/Module/Package/Dist/RDF.pm
+Copyright: This software is copyright (c) 2011-2012 by Toby Inkster.
+License: GPL-1.0+ or Artistic-1.0
+
+Files: inc/Module/Install/Makefile.pm
+Copyright: Copyright 2002, 2003, 2004 Audrey Tang and Brian Ingerson.
+License: GPL-1.0+ or Artistic-1.0
+
+Files: COPYRIGHT
+Copyright: None
+License: public-domain
+Comment: This file! Automatically generated.
+
+Files: inc/Module/Install/Package.pm
+Copyright: Copyright (c) 2011. Ingy doet Net.
+License: GPL-1.0+ or Artistic-1.0
+
+Files: inc/Module/Install/Base.pm
+Copyright: Copyright 2003, 2004 by Audrey Tang <autrijus@autrijus.org>.
+License: GPL-1.0+ or Artistic-1.0
+
+Files: inc/YAML/Tiny.pm
+Copyright: Copyright 2006 - 2012 Adam Kennedy.
+License: GPL-1.0+ or Artistic-1.0
+
+License: Artistic-1.0
+ This software is Copyright (c) 2013 by the copyright holder(s).
+ 
+ This is free software, licensed under:
+ 
+   The Artistic License 1.0
+
+License: GPL-1.0
+ This software is Copyright (c) 2013 by the copyright holder(s).
+ 
+ This is free software, licensed under:
+ 
+   The GNU General Public License, Version 1, February 1989
+

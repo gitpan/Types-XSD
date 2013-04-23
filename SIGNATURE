@@ -1,0 +1,94 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 f983c18fdb491c4b733235d54e8ca7563b67a6a3 CONTRIBUTING
+SHA1 36f74d32588ba234686afb26e67c99546c53c33b COPYRIGHT
+SHA1 9e307a5415ca4fa0a76a08bd7236f23f15544ea8 CREDITS
+SHA1 bacd662934390ccff3b1b7e056f5ffcadf37812a Changes
+SHA1 937d452c5c4069f4cda9ffaf45a33f1eb5f060e8 LICENSE
+SHA1 a90bb77b708c0506b91c73df946a39cc67256582 MANIFEST
+SHA1 6c57408eae33a802363604e877f1078c3759c754 META.ttl
+SHA1 35ee2d6d0eac587485b4231b59f63aa3bcd3683b META.yml
+SHA1 5847ba4f788090acc163ed1eb21b34ec3f2ce244 Makefile.PL
+SHA1 d254de922b6309613749346f92f9ff45d8e47fab README
+SHA1 06c410f05488c1612ed66b06d3a86b2580581e4a inc/Module/AutoInstall.pm
+SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
+SHA1 61ab1dd37e33ddbe155907ce51df8a3e56ac8bbf inc/Module/Install/AutoInstall.pm
+SHA1 c04f94f91fa97b9f8cfb5a36071098ab0e6c78e3 inc/Module/Install/AutoManifest.pm
+SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
+SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
+SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
+SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
+SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
+SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
+SHA1 3b9281ddf7dd6d6f5de0a9642c69333023193c80 inc/Module/Install/Package.pm
+SHA1 41f76ff6b39368a65da86377e43b34bacc2fb0eb inc/Module/Install/TrustMetaYml.pm
+SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
+SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
+SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
+SHA1 5a2f84a7a82eee0d1e5ed3628fe503a608efc10f inc/Module/Package/Dist/RDF.pm
+SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
+SHA1 207af514c3746fabbc5987a6df976bff8b555b54 lib/Types/XSD.pm
+SHA1 1ba94396ea24f03768e1ba3a9ad66ed8fafbbd32 meta/changes.pret
+SHA1 40538b1086a95516f564b58007bf80a6dc0582b7 meta/doap.pret
+SHA1 f3d852e6a27a77813c6739d54e9f1b7384ce4f74 meta/makefile.pret
+SHA1 a151cff74b5f29c00381a14d4ec8726e3763b6b2 meta/people.pret
+SHA1 2c75ffeb4646cf89209d472259d2b12c41a6e104 t/01basic.t
+SHA1 91d7a740140a467761afb6451ff209c4cc2a9dff t/50ID.t
+SHA1 75b4a2241ec1627342e6a517dfdf004c620d92a4 t/50NCName.t
+SHA1 287a77b215580bc6ad1e5ea1eb90bc0c0da02da6 t/50NMTOKEN.t
+SHA1 aef794c8dfff4182cf0247fb67e4e249c7669950 t/50Name.t
+SHA1 143b33515365c98c818828514692e90811bd4b0c t/50QName.t
+SHA1 d9aa1714ffb465ad35858e03182f4c389e3938e1 t/50anyURI.t
+SHA1 336384c6adde1a012e1daa5d82482c441eaa90ea t/50base64Binary.t
+SHA1 77f6ea12605a9a5900cd7ccb8dd7f285c402e878 t/50boolean.t
+SHA1 d1b500f1097d1be38622437cead8d2396464021c t/50byte.t
+SHA1 b5a5354b1f73a8b3ecf0472f6ae443e226f1b7fa t/50date.t
+SHA1 51a1bcfa1a13ae022889cbb90405e566f18a7fe2 t/50dateTime.t
+SHA1 44dd31c310e4818ab1c62831451fc47f0342fcc5 t/50decimal.t
+SHA1 4769d05c1ab7cdfb2cdfb20722a4583b2c12090e t/50double.t
+SHA1 fbb13f4b6946048486a0d261c636f251bafd83e5 t/50duration.t
+SHA1 461282a56a80fe3612e6d51d629607ab9db9bb1f t/50float.t
+SHA1 2a9e0b4645bb0ae716c44375e76ecbe83050e14a t/50gDay.t
+SHA1 f264df83f220bf7419b856e62c59fb153a268837 t/50gMonth.t
+SHA1 129e9fe5429a171cf62fb6633ac14f1637f98311 t/50gMonthDay.t
+SHA1 ee009ed82bcb467102ce378b3266c968e1ffb8d4 t/50gYear.t
+SHA1 03273ef6d2112b65c5b78e368499c2729ed331b4 t/50gYearMonth.t
+SHA1 4519cf56f326d5ce08ac8a295b9aba40dd84f570 t/50hexBinary.t
+SHA1 35ea2dad59cb363caf9917a7bfd6e7581b905ccf t/50int.t
+SHA1 b0ad6234b2ed99954867ea537f5c393cb6f6d609 t/50integer.t
+SHA1 f6c3039013fdcd8b7e8c7ab252592a407af9b75f t/50language.t
+SHA1 ade8f3b13564b0de9d9db8cf44964a2ded33ae27 t/50long.t
+SHA1 4bbbaeee52c9267f9bcc97fb35c6bee7641b0eef t/50negativeInteger.t
+SHA1 9dd6975e32d486b8052dc346893fb609a31f836a t/50nonNegativeInteger.t
+SHA1 77284da8537d59c7772375650aac3dac17638d8a t/50nonPositiveInteger.t
+SHA1 1535a892059f673cbbd46e8bf565e14534e44bb7 t/50normalizedString.t
+SHA1 a0a5c9b1ab7267ccc013fbebb0620507aafe3fc3 t/50positiveInteger.t
+SHA1 70856580523876a2b01b1e33040e51db11753afb t/50short.t
+SHA1 80d4e3e1da360f03b9611f1b6cc041a1dfd01e19 t/50string.t
+SHA1 938c95ca4c12fefe49b91caf13ad25d4c61ef483 t/50time.t
+SHA1 140d862cdcd552d98b39d6d1d82c9b62e951b9af t/50token.t
+SHA1 e80433cb2d9c984f9c873d50646da54df5b57807 t/50unsignedByte.t
+SHA1 8634ca8004e4efd68f1cab0ab0665f0ed5ad5a5f t/50unsignedInt.t
+SHA1 aac5f00de80fb1c8ac7d84bd49627dc0154a6855 t/50unsignedLong.t
+SHA1 4c9dd110d9ecdb11c1d181830bb6a7618c574712 t/50unsignedShort.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iEYEARECAAYFAlF3AKsACgkQzr+BKGoqfTnHOACgnvFru8ivLUKS0ULonbykuRua
+mzMAn04M66PmWla7CgHRLthV8/Alsa5n
+=E7Ao
+-----END PGP SIGNATURE-----

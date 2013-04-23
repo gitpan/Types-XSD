@@ -1,0 +1,136 @@
+NAME
+    Types::XSD - type constraints based on XML schema datatypes
+
+SYNOPSIS
+       package Person;
+   
+       use Moo;
+       use Types::XSD qw( PositiveInteger String );
+   
+       has name => (is => "ro", isa => String[ minLength => 1 ]);
+       has age  => (is => "ro", isa => PositiveInteger);
+
+DESCRIPTION
+  Type Constraints
+    This module defines the following type constraints based on the data
+    types defined in XML Schema <http://www.w3.org/TR/xmlschema-2/>. (The
+    names of the type constraints are the same as the XML Schema data types,
+    but capitalization often differs.)
+
+    "AnyType"
+    "AnySimpleType"
+    "String"
+    "NormalizedString"
+    "Token"
+    "Language"
+    "Name"
+    "NmToken"
+    "NmTokens"
+    "NCName"
+    "Id"
+    "IdRef"
+    "IdRefs"
+    "Entity"
+    "Entities"
+    "Boolean"
+    "Base64Binary"
+    "HexBinary"
+    "Float"
+    "Double"
+    "AnyURI"
+    "QName"
+    "Notation"
+    "Decimal"
+    "Integer"
+    "NonPositiveInteger"
+    "NegativeInteger"
+    "Long"
+    "Int"
+    "Short"
+    "Byte"
+    "NonNegativeInteger"
+    "PositiveInteger"
+    "UnsignedLong"
+    "UnsignedInt"
+    "UnsignedShort"
+    "UnsignedByte"
+    "Duration"
+    "DateTime"
+    "Time"
+    "Date"
+    "GYearMonth"
+    "GYear"
+    "GMonthDay"
+    "GDay"
+    "GMonth"
+
+    Datatypes can be parameterized using the facets defined by XML Schema.
+    For example:
+
+       use Types::XSD qw( String Decimal PositiveInteger Token );
+   
+       my @sizes = qw( XS S M L XL XXL );
+   
+       has name   => (is => "ro", isa => String[ minLength => 1 ]);
+       has price  => (is => "ro", isa => Decimal[ fractionDigits => 2 ]);
+       has rating => (is => "ro", isa => PositiveInteger[ maxInclusive => 5 ]);
+       has size   => (is => "ro", isa => Token[ enumeration => \@sizes ]);
+
+    The "whiteSpace" facet is ignored as I'm not entirely sure what it
+    should do. It perhaps makes sense for coercions, but this module doesn't
+    define any coercions.
+
+    Note that to be super-correct, the "{max,min}{Inclusive,Exclusive}"
+    facets for numeric types are performed by passing the numbers through
+    Math::BigInt or Math::BigFloat, so may be a little slow.
+
+  Functions
+    This module also exports some convenience functions:
+
+    "dur_parse($str)"
+        Parse an xsd:duration string, returning a DateTime::Duration.
+
+    "dur_cmp($a, $b)"
+        Compare two strings conforming to the xsd:duration datatype to
+        indicate which is the longer duration.
+
+        Returns -1 if $a is shorter. Returns 1 if $b is shorter. Returns 0
+        if the durations are identical. Returns undef if the comparison is
+        indeterminate; for example, "P1Y" (one year) and "P365D" (365 days)
+        are not necessarily identical - in leap years "P365D" is shorter.
+
+    "dt_cmp($type, $a, $b)"
+        Compare two datetime-like strings. For example, two "gYearMonth"
+        strings can be compared using:
+
+           dt_cmp(GYearMonth, "2009-02", "2010-10");
+
+        Both strings are expected to conform to the same datatype. It
+        doesn't make much sense to compare them otherwise.
+
+    "dt_parse($type, $str)"
+        Parse a datetime-like string, returning a DateTime::Incomplete
+        object. Note that DateTime::Incomplete objects are always returned,
+        even if the datetime is potentially complete.
+
+BUGS
+    Please report any bugs to
+    <http://rt.cpan.org/Dist/Display.html?Queue=Types-XSD>.
+
+SEE ALSO
+    Type::Tiny, Types::Standard.
+
+AUTHOR
+    Toby Inkster <tobyink@cpan.org>.
+
+COPYRIGHT AND LICENCE
+    This software is copyright (c) 2013 by Toby Inkster.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
+DISCLAIMER OF WARRANTIES
+    THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
+    WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
+    MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
