@@ -56,15 +56,16 @@ Files: CONTRIBUTING
 Copyright: Unknown
 License: Unknown
 
+Files: lib/Types/XSD.pm
+ t/01basic.t
+ t/02datetimes.t
+Copyright: This software is copyright (c) 2013 by Toby Inkster.
+License: GPL-1.0+ or Artistic-1.0
+
 Files: inc/Module/Install.pm
  inc/Module/Install/Include.pm
  inc/Module/Install/Metadata.pm
 Copyright: Copyright 2002 - 2012 Brian Ingerson, Audrey Tang and Adam Kennedy.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: lib/Types/XSD.pm
- t/01basic.t
-Copyright: This software is copyright (c) 2013 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
 Files: inc/Module/Install/TrustMetaYml.pm

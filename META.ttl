@@ -30,9 +30,8 @@ dist:project
 	cpant:requires    "DateTimeX::Auto 0"^^cpant:dsWithVersion;
 	cpant:requires    "Type::Library 0.003_04"^^cpant:dsWithVersion;
 	cpant:requires    "XML::RegExp 0"^^cpant:dsWithVersion;
-	cpant:test_requires "Test::DescribeMe"^^cpant:dsWithoutVersion;
 	cpant:test_requires "Test::More 0.88"^^cpant:dsWithVersion;
-	cpant:test_requires "Test::TypeTiny 0.001"^^cpant:dsWithVersion;
+	cpant:test_requires "Test::TypeTiny 0.003_04"^^cpant:dsWithVersion;
 	cpant:version_from [
 		a nfo:FileDataObject;
 		a nfo:SourceCode;
@@ -51,6 +50,7 @@ dist:project
 	doap:programming-language "Perl";
 	doap:release      dist:v_0-000_01;
 	doap:release      dist:v_0-000_02;
+	doap:release      dist:v_0-000_03;
 	doap:repository   [
 		a doap:HgRepository;
 		doap:browse <https://bitbucket.org/tobyink/p5-types-xsd>;
@@ -85,6 +85,41 @@ dist:v_0-000_02
 	dcs:released-by   cpan:tobyink;
 	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.000_02.tar.gz>;
 	doap:revision     "0.000_02"^^xsd:string.
+
+dist:v_0-000_03
+	a                 cpant:DeveloperRelease;
+	a                 doap:Version;
+	dc:identifier     "Types-XSD-0.000_03"^^xsd:string;
+	dc:issued         "2013-04-24"^^xsd:date;
+	dcs:changeset     [
+		dcs:item [
+			a dcs:Documentation;
+			rdfs:label "Types::XSD has some documentation now!";
+		];
+		dcs:item [
+			a dcs:Addition;
+			rdfs:label "DateTimeStamp type constraint";
+		];
+		dcs:item [
+			a dcs:Addition;
+			rdfs:label "YearMonthDuration type constraint";
+		];
+		dcs:item [
+			a dcs:Addition;
+			rdfs:label "DayTimeDuration type constraint";
+		];
+		dcs:item [
+			a dcs:Addition;
+			rdfs:label "explicitTimezone parameter";
+		];
+		dcs:item [
+			a dcs:Addition;
+			rdfs:label "assertions parameter";
+		];
+	];
+	dcs:released-by   cpan:tobyink;
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.000_03.tar.gz>;
+	doap:revision     "0.000_03"^^xsd:string.
 
 cpan:tobyink
 	a                 foaf:Person;

@@ -4,9 +4,8 @@ author:
   - 'Toby Inkster <tobyink@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: 6.59
-  Test::DescribeMe: 0
   Test::More: 0.88
-  Test::TypeTiny: 0.001
+  Test::TypeTiny: 0.003_04
 configure_requires:
   ExtUtils::MakeMaker: 6.59
 distribution_type: module
@@ -35,4 +34,4 @@ resources:
   homepage: https://metacpan.org/release/Types-XSD
   license: http://dev.perl.org/licenses/
   repository: https://bitbucket.org/tobyink/p5-types-xsd
-version: 0.000_02
+version: 0.000_03
