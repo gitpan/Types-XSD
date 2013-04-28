@@ -51,6 +51,7 @@ dist:project
 	doap:release      dist:v_0-000_01;
 	doap:release      dist:v_0-000_02;
 	doap:release      dist:v_0-000_03;
+	doap:release      dist:v_0-000_04;
 	doap:repository   [
 		a doap:HgRepository;
 		doap:browse <https://bitbucket.org/tobyink/p5-types-xsd>;
@@ -120,6 +121,21 @@ dist:v_0-000_03
 	dcs:released-by   cpan:tobyink;
 	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.000_03.tar.gz>;
 	doap:revision     "0.000_03"^^xsd:string.
+
+dist:v_0-000_04
+	a                 cpant:DeveloperRelease;
+	a                 doap:Version;
+	dc:identifier     "Types-XSD-0.000_04"^^xsd:string;
+	dc:issued         "2013-04-28"^^xsd:date;
+	dcs:changeset     [
+		dcs:item [
+			a dcs:Packaging;
+			rdfs:label "Bundle a version of Type::Tiny for testing purposes (only in developer previews; not for stable releases).";
+		];
+	];
+	dcs:released-by   cpan:tobyink;
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.000_04.tar.gz>;
+	doap:revision     "0.000_04"^^xsd:string.
 
 cpan:tobyink
 	a                 foaf:Person;
