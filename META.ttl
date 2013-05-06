@@ -28,10 +28,10 @@ dist:project
 	];
 	cpant:requires    "DateTime::Incomplete 0"^^cpant:dsWithVersion;
 	cpant:requires    "DateTimeX::Auto 0"^^cpant:dsWithVersion;
-	cpant:requires    "Type::Library 0.003_04"^^cpant:dsWithVersion;
+	cpant:requires    "Type::Library 0.004"^^cpant:dsWithVersion;
 	cpant:requires    "XML::RegExp 0"^^cpant:dsWithVersion;
 	cpant:test_requires "Test::More 0.88"^^cpant:dsWithVersion;
-	cpant:test_requires "Test::TypeTiny 0.003_04"^^cpant:dsWithVersion;
+	cpant:test_requires "Test::TypeTiny 0.004"^^cpant:dsWithVersion;
 	cpant:version_from [
 		a nfo:FileDataObject;
 		a nfo:SourceCode;
@@ -52,6 +52,7 @@ dist:project
 	doap:release      dist:v_0-000_02;
 	doap:release      dist:v_0-000_03;
 	doap:release      dist:v_0-000_04;
+	doap:release      dist:v_0-001;
 	doap:repository   [
 		a doap:HgRepository;
 		doap:browse <https://bitbucket.org/tobyink/p5-types-xsd>;
@@ -136,6 +137,16 @@ dist:v_0-000_04
 	dcs:released-by   cpan:tobyink;
 	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.000_04.tar.gz>;
 	doap:revision     "0.000_04"^^xsd:string.
+
+dist:v_0-001
+	a                 doap:Version;
+	rdfs:label        "First public release";
+	dc:identifier     "Types-XSD-0.001"^^xsd:string;
+	dc:issued         "2013-04-28"^^xsd:date;
+	dcs:released-by   cpan:tobyink;
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.001.tar.gz>;
+	doap:revision     "0.001"^^xsd:string;
+	rdfs:comment      "No functional changes".
 
 cpan:tobyink
 	a                 foaf:Person;
