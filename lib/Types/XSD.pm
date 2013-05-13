@@ -7,7 +7,7 @@ use utf8;
 
 BEGIN {
 	$Types::XSD::AUTHORITY = 'cpan:TOBYINK';
-	$Types::XSD::VERSION   = '0.001';
+	$Types::XSD::VERSION   = '0.002';
 }
 
 use B qw(perlstring);
@@ -988,7 +988,7 @@ An day with optional timezone.
 
 =item C<< GMonth >>
 
-An month pair with optional timezone.
+An month with optional timezone.
 
 =back
 

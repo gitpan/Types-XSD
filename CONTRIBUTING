@@ -25,15 +25,17 @@ DESCRIPTION
         Generally speaking you should check out the latest copy of the code
         from the source repository rather than using the CPAN distribution.
         The file META.yml should contain a link to the source repository. If
-        not, then try <https://bitbucket.org/tobyink> or submit a bug
-        report. (As far as I'm concerned the lack of a link is a bug.) Many
-        of my distributions are also mirrored at
-        <http://github.com/tobyink>.
+        not, then try <https://github.com/tobyink> or submit a bug report.
+        (As far as I'm concerned the lack of a link is a bug.) Many of my
+        distributions are also mirrored at <http://bitbucket.org/tobyink>.
 
-        To submit the patch, do a pull request on Bitbucket or Github, or
+        To submit the patch, do a pull request on GitHub or Bitbucket, or
         attach a diff file to a bug report. Unless otherwise stated, I'll
         assume that your contributions are licensed under the same terms as
         the rest of the project.
+
+        (If using git, feel free to work in a branch. For Mercurial, I'd
+        prefer bookmarks within the default branch.)
 
     *   Documentation
 

@@ -203,7 +203,7 @@ DESCRIPTION
         An day with optional timezone.
 
     "GMonth"
-        An month pair with optional timezone.
+        An month with optional timezone.
 
   Parameters
     Datatypes can be parameterized using the facets defined by XML Schema.

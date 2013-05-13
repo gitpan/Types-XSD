@@ -25,7 +25,7 @@ no_index:
     - xt
 requires:
   DateTime::Incomplete: 0
-  DateTimeX::Auto: 0
+  DateTimeX::Auto: 0.004
   Type::Library: 0.004
   XML::RegExp: 0
   perl: 5.8.3
@@ -33,5 +33,5 @@ resources:
   bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=Types-XSD
   homepage: https://metacpan.org/release/Types-XSD
   license: http://dev.perl.org/licenses/
-  repository: https://bitbucket.org/tobyink/p5-types-xsd
-version: 0.001
+  repository: https://github.com/tobyink/p5-types-xsd
+version: 0.002

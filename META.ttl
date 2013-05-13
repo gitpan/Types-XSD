@@ -27,7 +27,7 @@ dist:project
 		nfo:programmingLanguage "Perl";
 	];
 	cpant:requires    "DateTime::Incomplete 0"^^cpant:dsWithVersion;
-	cpant:requires    "DateTimeX::Auto 0"^^cpant:dsWithVersion;
+	cpant:requires    "DateTimeX::Auto 0.004"^^cpant:dsWithVersion;
 	cpant:requires    "Type::Library 0.004"^^cpant:dsWithVersion;
 	cpant:requires    "XML::RegExp 0"^^cpant:dsWithVersion;
 	cpant:test_requires "Test::More 0.88"^^cpant:dsWithVersion;
@@ -53,9 +53,10 @@ dist:project
 	doap:release      dist:v_0-000_03;
 	doap:release      dist:v_0-000_04;
 	doap:release      dist:v_0-001;
+	doap:release      dist:v_0-002;
 	doap:repository   [
-		a doap:HgRepository;
-		doap:browse <https://bitbucket.org/tobyink/p5-types-xsd>;
+		a doap:GitRepository;
+		doap:browse <https://github.com/tobyink/p5-types-xsd>;
 	];
 	doap:shortdesc    "type constraints based on XML schema datatypes".
 
@@ -147,6 +148,20 @@ dist:v_0-001
 	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.001.tar.gz>;
 	doap:revision     "0.001"^^xsd:string;
 	rdfs:comment      "No functional changes".
+
+dist:v_0-002
+	a                 doap:Version;
+	dc:identifier     "Types-XSD-0.002"^^xsd:string;
+	dc:issued         "2013-05-13"^^xsd:date;
+	dcs:changeset     [
+		dcs:item [
+			a dcs:Packaging;
+			rdfs:label "Require DateTimeX::Auto 0.004.";
+		];
+	];
+	dcs:released-by   cpan:tobyink;
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.002.tar.gz>;
+	doap:revision     "0.002"^^xsd:string.
 
 cpan:tobyink
 	a                 foaf:Person;

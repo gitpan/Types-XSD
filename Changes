@@ -6,6 +6,10 @@ Home page:    <https://metacpan.org/release/Types-XSD>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Types-XSD>
 Maintainer:   Toby Inkster <mailto:tobyink@cpan.org>
 
+0.002  2013-05-13
+
+ - (Packaging) Require DateTimeX::Auto 0.004.
+
 0.001  2013-04-28  # First public release
 
 
