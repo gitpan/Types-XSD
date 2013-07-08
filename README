@@ -5,7 +5,7 @@ SYNOPSIS
        package Person;
    
        use Moo;
-       use Types::XSD qw( PositiveInteger String );
+       use Types::XSD::Lite qw( PositiveInteger String );
    
        has name => (is => "ro", isa => String[ minLength => 1 ]);
        has age  => (is => "ro", isa => PositiveInteger);
@@ -15,6 +15,11 @@ DESCRIPTION
     built with Type::Library. It can be used as a type constraint library
     for Moo, Mouse or Moose, or used completely independently of any OO
     framework.
+
+    This module is an extension of Types::XSD::Lite which has fewer type
+    constraints, but fewer dependencies. For completeness, the type
+    constraints and other features inherited from Types::XSD::Lite are
+    documented below too.
 
   Type Constraints
     This module defines the following type constraints based on the data
@@ -209,7 +214,7 @@ DESCRIPTION
     Datatypes can be parameterized using the facets defined by XML Schema.
     For example:
 
-       use Types::XSD qw( String Decimal PositiveInteger Token );
+       use Types::XSD::Lite qw( String Decimal PositiveInteger Token );
    
        my @sizes = qw( XS S M L XL XXL );
    
@@ -320,7 +325,7 @@ BUGS
     <http://rt.cpan.org/Dist/Display.html?Queue=Types-XSD>.
 
 SEE ALSO
-    Type::Tiny, Types::Standard.
+    Type::Tiny, Types::XSD::Lite, Types::Standard.
 
     *   <http://www.w3.org/TR/xmlschema-2/> Datatypes in XML Schema 1.0
 

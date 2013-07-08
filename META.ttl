@@ -29,8 +29,9 @@ dist:project
 	cpant:requires    "DateTime::Incomplete 0"^^cpant:dsWithVersion;
 	cpant:requires    "DateTimeX::Auto 0.004"^^cpant:dsWithVersion;
 	cpant:requires    "Type::Library 0.004"^^cpant:dsWithVersion;
+	cpant:requires    "Types::XSD::Lite 0.003"^^cpant:dsWithVersion;
 	cpant:requires    "XML::RegExp 0"^^cpant:dsWithVersion;
-	cpant:test_requires "Test::More 0.88"^^cpant:dsWithVersion;
+	cpant:test_requires "Test::More 0.96"^^cpant:dsWithVersion;
 	cpant:test_requires "Test::TypeTiny 0.004"^^cpant:dsWithVersion;
 	cpant:version_from [
 		a nfo:FileDataObject;
@@ -54,6 +55,7 @@ dist:project
 	doap:release      dist:v_0-000_04;
 	doap:release      dist:v_0-001;
 	doap:release      dist:v_0-002;
+	doap:release      dist:v_0-003;
 	doap:repository   [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-types-xsd>;
@@ -162,6 +164,20 @@ dist:v_0-002
 	dcs:released-by   cpan:tobyink;
 	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.002.tar.gz>;
 	doap:revision     "0.002"^^xsd:string.
+
+dist:v_0-003
+	a                 doap:Version;
+	dc:identifier     "Types-XSD-0.003"^^xsd:string;
+	dc:issued         "2013-07-08"^^xsd:date;
+	dcs:changeset     [
+		dcs:item [
+			a dcs:Packaging;
+			rdfs:label "Split out easy types into Types::XSD::Lite, which this module now depends on.";
+		];
+	];
+	dcs:released-by   cpan:tobyink;
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.003.tar.gz>;
+	doap:revision     "0.003"^^xsd:string.
 
 cpan:tobyink
 	a                 foaf:Person;
