@@ -45,6 +45,14 @@ Files: Makefile.PL
 Copyright: Copyright 2013 Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
+Files: README
+ lib/Types/XSD.pm
+ t/01basic.t
+ t/02datetimes.t
+ t/03duration.t
+Copyright: This software is copyright (c) 2013-2014 by Toby Inkster.
+License: GPL-1.0+ or Artistic-1.0
+
 Files: Changes
  META.json
  META.yml
@@ -64,16 +72,6 @@ Files: CONTRIBUTING
  LICENSE
 Copyright: Unknown
 License: Unknown
-
-Files: README
- lib/Types/XSD.pm
-Copyright: This software is copyright (c) 2013 by Toby Inkster.
-License: GPL-1.0+ or Artistic-1.0
-
-Files: t/01basic.t
- t/02datetimes.t
-Copyright: This software is copyright (c) 2013-2014 by Toby Inkster.
-License: GPL-1.0+ or Artistic-1.0
 
 License: Artistic-1.0
  This software is Copyright (c) 2014 by the copyright holder(s).

@@ -15,6 +15,7 @@ doap.ttl
 lib/Types/XSD.pm
 t/01basic.t
 t/02datetimes.t
+t/03duration.t
 t/50ID.t
 t/50NCName.t
 t/50NMTOKEN.t

@@ -1,6 +1,7 @@
 @prefix cpan-uri: <http://purl.org/NET/cpan-uri/terms#> .
 @prefix dc:    <http://purl.org/dc/terms/> .
 @prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix doap-bugs: <http://ontologi.es/doap-bugs#> .
 @prefix doap-changeset: <http://ontologi.es/doap-changeset#> .
 @prefix doap-deps: <http://ontologi.es/doap-deps#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
@@ -34,7 +35,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Types-XSD";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-000_01>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-000_02>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-000_03>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-000_04>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-003>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-004>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-000_01>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-000_02>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-000_03>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-000_04>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-003>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-004>, <http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-005>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-types-xsd>;
@@ -165,10 +166,31 @@
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.004.tar.gz>;
 	doap:revision        "0.004"^^xsd:string.
 
+<http://purl.org/NET/cpan-uri/dist/Types-XSD/v_0-005>
+	a                    doap:Version;
+	dc:identifier        "Types-XSD-0.005"^^xsd:string;
+	dc:issued            "2014-09-11"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Bugfix;
+			rdfs:label "Add support for negative durations.";
+			doap-changeset:fixes <http://purl.org/NET/cpan-uri/rt/ticket/89005>;
+			doap-changeset:thanks [ foaf:nick "mprentice" ];
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Types-XSD-0.005.tar.gz>;
+	doap:revision        "0.005"^^xsd:string.
+
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;
 	foaf:mbox            <mailto:tobyink@cpan.org>;
 	foaf:name            "Toby Inkster";
 	foaf:nick            "TOBYINK";
 	foaf:page            <https://metacpan.org/author/TOBYINK>.
+
+<http://purl.org/NET/cpan-uri/rt/ticket/89005>
+	a                    doap-bugs:Issue;
+	doap-bugs:id         "89005"^^xsd:string;
+	doap-bugs:page       <https://rt.cpan.org/Ticket/Display.html?id=89005>.
 

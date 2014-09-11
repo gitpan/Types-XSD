@@ -7,7 +7,7 @@ use utf8;
 
 BEGIN {
 	$Types::XSD::AUTHORITY = 'cpan:TOBYINK';
-	$Types::XSD::VERSION   = '0.004';
+	$Types::XSD::VERSION   = '0.005';
 }
 
 use B qw(perlstring);
@@ -221,7 +221,7 @@ declare Notation, as QName;
 
 facet qw( pattern whiteSpace enumeration maxInclusiveDuration maxExclusiveDuration minInclusiveDuration minExclusiveDuration ),
 declare Duration, as Types::Standard::StrMatch[
-	qr{^P
+	qr{^-?P
 		(?:[0-9]+Y)?
 		(?:[0-9]+M)?
 		(?:[0-9]+D)?
@@ -234,10 +234,10 @@ declare Duration, as Types::Standard::StrMatch[
 ];
 
 facet qw( pattern whiteSpace enumeration maxInclusiveDuration maxExclusiveDuration minInclusiveDuration minExclusiveDuration ),
-declare YearMonthDuration, as Duration->parameterize(pattern => qr{^[^DT]*$});
+declare YearMonthDuration, as Duration->parameterize(pattern => qr{^[^DT]*$}i);
 
 facet qw( pattern whiteSpace enumeration maxInclusiveDuration maxExclusiveDuration minInclusiveDuration minExclusiveDuration ),
-declare DayTimeDuration, as Duration->parameterize(pattern => qr{^[^YM]*[DT].*$});
+declare DayTimeDuration, as Duration->parameterize(pattern => qr{^[^YM]*[DT].*$}i);
 
 dt_maker(
 	DateTime => qr{^
@@ -780,7 +780,7 @@ Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2013 by Toby Inkster.
+This software is copyright (c) 2013-2014 by Toby Inkster.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

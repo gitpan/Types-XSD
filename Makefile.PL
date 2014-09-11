@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "type constraints based on XML schema datatypes",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -30,7 +30,7 @@ my $meta = {
                         test => { requires => { "Test::More" => 0.96, "Test::TypeTiny" => 0.004 } },
                       },
   "provides"       => {
-                        "Types::XSD" => { file => "lib/Types/XSD.pm", version => 0.004 },
+                        "Types::XSD" => { file => "lib/Types/XSD.pm", version => 0.005 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -44,7 +44,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/Types-XSD/project",
                       },
-  "version"        => 0.004,
+  "version"        => 0.005,
 };
 
 my %dynamic_config;
